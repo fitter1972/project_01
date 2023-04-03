@@ -26,3 +26,5 @@ print(my_favorite_songs[prelast_comma + 2:last_comma])
 
 mfs = my_favorite_songs.split(', ') # Конвертируем строку в список
 print(mfs[0],mfs[-1],mfs[1],mfs[-2], sep='\n')
+
+# да, вариант 2 это самый топ) добавить нечего)
