@@ -36,3 +36,10 @@ while True:                                   # Цикл проверки вво
 
 month_name, quarter_name = quarter_of(num_month)
 print(f'месяц {num_month} ({month_name}) является частью {quarter_name} квартала')
+
+# что-то сложно( ну это вы сделали как в задаче 1.3 но вот тут как раз лучше словарями
+
+можно же так)
+def quarter_of(month):
+    q = {1: (1,3), 2:(4,6), 3:(7,9), 4:(10,12)}
+    return [k for k,v in q.items() if v[0] <= month <= v[1]][0]
