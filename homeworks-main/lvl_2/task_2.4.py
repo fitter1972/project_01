@@ -80,3 +80,7 @@ C6 = remove_word_with_one_em("Hi! Hi!! Hi!")
 print('C6 ->', C6)
 C7 = remove_word_with_one_em("Hi! !Hi! Hi!")
 print('C7 ->', C7)
+
+# В пункте C сделал покороче
+def remove_word_with_one_em(s):
+    return ' '.join([w for w in s.split(' ') if w.count('!')!=1])
