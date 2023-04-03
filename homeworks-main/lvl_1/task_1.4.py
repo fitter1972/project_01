@@ -39,3 +39,6 @@ for product_titles, code_titles in titles.items():                              
         sum_quantity += i["quantity"]                                              # суммируем количество
         sum_price += i["quantity"] * i["price"]                                    # суммируем стоимость
       print(f'{product_titles} - {sum_quantity} шт., стоимостью {sum_price} руб.') # вывод
+    
+# Ну тут вопросов нет)
+# Хорошо
