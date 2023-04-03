@@ -69,3 +69,17 @@ for i in random_songs_D:
     d = datetime.timedelta(minutes=int(m), seconds=int(s))
     time_sum += d
 print("Пункт D: Три песни звучат", time_sum, "минут")
+
+# Интересно) у меня был такой вариант тоже с timedelta
+from datetime import timedelta
+from math import modf
+from random import sample
+
+
+total_time = timedelta()
+
+for song in sample(my_favorite_songs, 3):
+    s, m = modf(song[1])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Три песни звучат {total_time} минут')
